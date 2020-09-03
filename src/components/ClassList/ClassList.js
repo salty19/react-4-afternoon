@@ -23,11 +23,14 @@ export default class ClassList extends Component {
 
 
   render() {
+    const students = this.state.students.map((student, i) => (
+      <h3 key={i}> {student.first_name} {student.last_name} </h3>
+    ))
     return (
       <div className="box">
-        <h1></h1>
+        <h1> {this.props.match.params.class} </h1>
         <h2>ClassList:</h2>
-
+        {students}
       </div>
     )
   }
