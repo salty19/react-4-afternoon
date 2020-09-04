@@ -8,6 +8,7 @@ export default class Student extends Component {
 
     this.state = {
       studentInfo: {}
+    }
   }
 
   componentDidMount() {
